@@ -1,0 +1,90 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  max-width: 1200px;
+}
+
+.header-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 70%;
+  background-color: #F5F7FA;
+  z-index: -1;
+}
+.header-container .header-container__nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 85px;
+}
+.header-container .header-container__nav .header-container__nav__menu {
+  width: 40px;
+}
+.header-container .header-container__nav .header-container__nav__logo {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.header-container .header-container__nav .header-container__nav__list {
+  justify-content: space-around;
+  gap: 1rem;
+  flex: 2;
+  padding: 0 100px;
+  list-style: none;
+}
+.header-container .header-container__nav .header-container__nav__list .header-container__nav__item .header-container__nav__link {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+}
+.header-container .header-container__nav .header-container__nav__actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex: 1;
+}
+.header-container .header-container__nav .header-container__nav__actions .header-container__nav__action {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.header-container .header-container__nav .header-container__nav__actions .header-container__nav__action.header-container__nav__action--login {
+  color: #4CAF4F;
+}
+.header-container .header-container__nav .header-container__nav__actions .header-container__nav__action.header-container__nav__action--signup {
+  color: #fff;
+  background-color: #4CAF4F;
+}
+.header-container .header-container__header {
+  margin: 10vh 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-container .header-container__header .header-container__header-content .header-container__header-title {
+  margin: 0;
+  font-size: 3rem;
+}
+.header-container .header-container__header .header-container__header-content .header-container__header-title .header-container__header-title-span {
+  display: block;
+  color: #4CAF4F;
+}
+.header-container .header-container__header .header-container__header-content .header-container__header-text {
+  color: #717171;
+  margin-top: 1rem;
+}
+.header-container .header-container__header .header-container__header-content .header-container__header-button {
+  margin-top: 2rem;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 25px;
+  background-color: #4CAF4F;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
