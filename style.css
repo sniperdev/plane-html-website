@@ -7,37 +7,115 @@ body {
 
 .header__nav {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 .header__nav .nav__logo {
   flex: 1;
+  max-height: 30px;
+}
+.header__nav .nav__hamburger {
+  display: block;
+  position: fixed;
+  top: 0.2rem;
+  right: 0.2rem;
 }
 .header__nav .nav__list {
   display: flex;
-  justify-content: space-between;
-  flex: 2;
+  flex-direction: column;
+  width: 100%;
+  height: 0;
+  gap: 1rem;
+  padding: 0;
+  overflow: hidden;
+  transition: height 0.3s linear;
+}
+.header__nav .nav__list--active {
+  height: 40vh;
 }
 .header__nav .nav__list .list__item {
   list-style: none;
+  padding: 0.5rem;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  cursor: pointer;
 }
 .header__nav .nav__list .list__item .item__link {
   text-decoration: none;
   color: black;
 }
 .header__nav .nav__login-container {
-  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0;
+  overflow: hidden;
+  transition: height linear 0.25s;
+}
+.header__nav .nav__login-container--active {
+  height: 10vh;
 }
 .header__nav .nav__login-container .login-container__link {
   text-decoration: none;
-  color: black;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
 }
-.header__nav .nav__login-container .login-container__link .link--login {
+.header__nav .nav__login-container .login-container__link.link--login {
   color: #4CAF4F;
 }
-.header__nav .nav__login-container .login-container__link .link--signup {
-  display: block;
+.header__nav .nav__login-container .login-container__link.link--signup {
   color: white;
   background-color: #4CAF4F;
+}
+
+@media (min-width: 768px) {
+  .header__nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__nav .nav__logo {
+    flex: 1;
+    max-height: 30px;
+  }
+  .header__nav .nav__hamburger {
+    display: none;
+  }
+  .header__nav .nav__list {
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 2;
+    overflow: auto;
+    height: 100%;
+  }
+  .header__nav .nav__list .list__item {
+    list-style: none;
+    border: none;
+  }
+  .header__nav .nav__list .list__item .item__link {
+    text-decoration: none;
+    color: black;
+  }
+  .header__nav .nav__login-container {
+    flex: 1;
+    overflow: auto;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__nav .nav__login-container .login-container__link {
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+  }
+  .header__nav .nav__login-container .login-container__link.link--login {
+    color: #4CAF4F;
+  }
+  .header__nav .nav__login-container .login-container__link.link--signup {
+    color: white;
+    background-color: #4CAF4F;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
