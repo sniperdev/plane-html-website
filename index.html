@@ -3,43 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <title>Nexcent</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="header-container">
-
-  <nav class="header-container__nav">
-
-    <div class="header-container__nav--logo-container">
-      <img src="./img/logo.svg" alt="Nexcent company logo">
-      <img src="./img/burger-menu.svg" alt="Menu button" class="header-container__nav--logo-container__menu" id="menu-button">
-    </div>
-    <ul class="header-container__nav__list" id="nav">
-      <li class="header-container__nav__item">
-        <a href="#" class="header-container__nav__link">Home</a>
+<header class="header">
+  <nav class="header__nav nav">
+    <img src="./img/logo.svg" alt="Logo" class="nav__logo">
+    <ul class="nav__list list">
+      <li class="list__item item">
+        <a href="" class="item__link">Home</a>
       </li>
-      <li class="header-container__nav__item"><a href="#" class="header-container__nav__link">Service</a></li>
-      <li class="header-container__nav__item"><a href="#" class="header-container__nav__link">Feature</a></li>
-      <li class="header-container__nav__item"><a href="#" class="header-container__nav__link">Product</a></li>
-      <li class="header-container__nav__item"><a href="#" class="header-container__nav__link">Testimonial</a></li>
-      <li class="header-container__nav__item"><a href="#" class="header-container__nav__link">FAQ</a></li>
-      <li class="header-container__nav__item"><a href="#" class="header-container__nav__link header-container__nav__action--login">Login</a></li>
-      <li class="header-container__nav__item"><a href="#" class="header-container__nav__link header-container__nav__action--signup">Sign up</a></li>
+      <li class="list__item item">
+        <a href="" class="item__link">Service</a>
+      </li>
+      <li class="list__item item">
+        <a href="" class="item__link">Feature</a>
+      </li>
+      <li class="list__item item">
+        <a href="" class="item__link">Product</a>
+      </li>
+      <li class="list__item item">
+        <a href="" class="item__link">Testimonial</a>
+      </li>
+      <li class="list__item item">
+        <a href="" class="item__link">FAQ</a>
+      </li>
     </ul>
+    <div class="nav__login-container login-container">
+      <a href="" class="login-container__link link link--login">Login</a>
+      <a href="" class="login-container__link link link--signup">Sign up</a>
+    </div>
   </nav>
-
-  <header class="header-container__header">
-    <div class="header-container__header__content">
-      <h1 class="header-container__header__content--title">Lessons and insights <span class="header-container__header__content--title-span">from 8 years</span></h1>
-      <p class="header-container__header__content--text">Where to grow your business as a photographer: site or social media?</p>
-      <button class="header-container__header__content--button">Register</button>
-    </div>
-    <div class="header-container__header__image-container">
-      <img src="./img/header.svg" alt="" class=header-container__header__image-container--image" width="100%">
-    </div>
-  </header>
-</div>
+</header>
 
 <script src="script.js"></script>
 </body>
