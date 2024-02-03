@@ -10,6 +10,11 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 .header__nav .nav__logo {
   flex: 1;
@@ -30,14 +35,15 @@ body {
   padding: 0;
   overflow: hidden;
   transition: height 0.3s linear;
+  background-color: white;
 }
 .header__nav .nav__list--active {
-  height: 40vh;
+  height: calc((34px + 1rem) * 6);
 }
 .header__nav .nav__list .list__item {
   list-style: none;
   padding: 0.5rem;
-  border: 1px solid #d3d3d3;
+  border: 1px solid #838383;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -67,6 +73,95 @@ body {
 .header__nav .nav__login-container .login-container__link.link--signup {
   color: white;
   background-color: #4CAF4F;
+}
+.header__register {
+  margin-top: 4rem;
+}
+.header__register .register__register-container .register-container__text span {
+  color: #4CAF4F;
+}
+.header__register .register__register-container .register-container__text button {
+  background-color: #4CAF4F;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.header__register .register__carousel {
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem;
+  margin-top: 5px;
+}
+.header__register .register__carousel .carousel__dot {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: #838383;
+}
+.header__register .register__carousel .carousel__dot--active {
+  background-color: #4CAF4F;
+}
+
+.clients-container {
+  border-bottom: 1px solid #838383;
+}
+.clients-container h2 {
+  text-align: center;
+  margin-top: 2rem;
+}
+.clients-container p {
+  text-align: center;
+  color: #838383;
+}
+.clients-container__logos {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+}
+
+.community-container {
+  margin-top: 2rem;
+  border-bottom: 1px solid #838383;
+  text-align: center;
+}
+.community-container__title {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.community-container__text {
+  margin: 5px 0;
+  color: #838383;
+}
+.community-container__list {
+  margin: 2rem 0;
+}
+.community-container__list .list__item {
+  margin: 2rem 0;
+}
+.community-container__list .list__item .item__title {
+  font-size: 1.2rem;
+}
+.community-container__list .list__item .item__text {
+  color: #838383;
+}
+
+.unlock-container {
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #838383;
+}
+.unlock-container .unlock__content .content__text {
+  color: #838383;
+}
+.unlock-container .unlock__content .content__button {
+  background-color: #4CAF4F;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
